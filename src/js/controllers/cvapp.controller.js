@@ -42,16 +42,11 @@
         }
         function GetSocial() {
             return GetSocialFactory.get(function (data) {
-                vm.dataSocial = data.basics.profiles;
+                vm.dataSocial = data.basics;
                 vm.dataSocial;
-                vm.social = [];
 
-                angular.forEach(vm.dataSocial, function (value, key) {
-                    vm.social.push(key + ': ' + value);
-                });
+                console.log(vm.dataSocial.profiles);
 
-
-                console.log(data.basics.profiles);
             }, function (e) {
                 // TODO
             });
