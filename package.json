@@ -1,0 +1,33 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Mi CV usando angularJs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "Angel Cruz <me@abr4xas.org> (http://abr4xas.org)",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.8.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "reset-css": "^2.0.2011012603"
+  },
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-resource": "^1.5.7",
+    "angular-ui-router": "^0.3.1"
+  }
+}
