@@ -21,10 +21,9 @@ var gulp = require('gulp'),
 // Angular Bundle
 gulp.task('angular', ['delete'], function () {
     var angularLib = './node_modules/angular/angular.js',
-        uiRouter = './node_modules/angular-ui-router/release/angular-ui-router.js',
-        ngResource = './node_modules/angular-resource/angular-resource.js';
+        uiRouter = './node_modules/angular-ui-router/release/angular-ui-router.js';
 
-    return gulp.src([angularLib, uiRouter, ngResource])
+    return gulp.src([angularLib, uiRouter])
         .pipe(concat('angular-libs.min.js'))
         .pipe(uglify())
         .pipe(size({ gzip: true, showFiles: true }))
@@ -34,11 +33,10 @@ gulp.task('angular', ['delete'], function () {
 // App Bundle
 gulp.task('my-app', function () {
     var appModule = './src/js/modules/*.js',
-        appService = './src/js/services/*.js',
         appRoutes = './src/js/routes/*.js',
         appController = './src/js/controllers/*.js';
 
-    return gulp.src([appModule, appService, appController, appRoutes])
+    return gulp.src([appModule, appController, appRoutes])
         .pipe(sourcemaps.init())
         .pipe(concat('app-libs.min.js'))
         .pipe(size({ gzip: true, showFiles: true }))

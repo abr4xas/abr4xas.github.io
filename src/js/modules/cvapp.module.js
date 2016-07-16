@@ -1,5 +1,5 @@
 (function () {
     'use strict';
     angular
-        .module('cvapp', ['ui.router', 'ngResource', 'cvJson']);
+        .module('cvapp', ['ui.router', 'ngResource']);
 })();

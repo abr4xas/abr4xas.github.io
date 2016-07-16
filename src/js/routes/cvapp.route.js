@@ -20,7 +20,7 @@
                 url: '/',
                 views: {
                     menu: {
-                        controller: 'socialCtrl',
+                        controller: 'homeCtrl',
                         controllerAs: 'ctrl',
                         templateUrl: './templates/home/menu_tpl.html'
                     },
