@@ -23,7 +23,7 @@
                 "email": "me@abr4xas.org",
                 "phone": "(000) 000-0000",
                 "website": "http://abr4xas.org",
-                "summary": "A summary of Angel Cruz...",
+                "summary": "Front End Web Developer, ágil y pro-activo con amplía experiencia en creación de sitios web óptimos. Entusiasta HTML5 y CSS3, actualmente en los caminos JavaScript (Angular JS, Node.JS). Estoy en continua formación para mejorar y ampliar los conocimientos que he obtenido durante tantos años en este medio. ",
                 "location": {
                     "address": "2712 Broadway St",
                     "postalCode": "CA 94115",
@@ -33,10 +33,12 @@
                 },
                 "profiles": [
                     {
+                        "username": "abr4xas",
                         "network": "Twitter",
-                        "url": "http://twitter.com/"
+                        "url": "http://twitter.com/abr4xas"
                     },
                     {
+                        "username": "abr4xas",
                         "network": "Linkedin",
                         "url": "https://ve.linkedin.com/in/"
                     }
@@ -50,12 +52,45 @@
             },
             "work": [
                 {
-                    "company": "Company",
-                    "position": "President",
+                    "company": "Labmedia Latam",
+                    "position": "Freelancer Frontend Developer",
                     "website": "http://company.com",
-                    "startDate": "2013-01-01",
-                    "endDate": "2014-01-01",
-                    "summary": "Description...",
+                    "startDate": "Jun 2016",
+                    "endDate": "Present",
+                    "summary": "Encargado del aspecto visual de las aplicaciones corporativas de la empresa y clientes.",
+                    "highlights": [
+                        "Started the company"
+                    ]
+                },
+                {
+                    "company": "B. H. technology, C. A.",
+                    "position": "Frontend Developer",
+                    "website": "http://company.com",
+                    "startDate": "Ene 2016",
+                    "endDate": "Jul 2016",
+                    "summary": "Desarrollo de interfaz web. Utilizando herramientas como Bootstrap, Grunt, Gulp, SASS, Stylus, HTML5 y CSS3.",
+                    "highlights": [
+                        "Started the company"
+                    ]
+                },
+                {
+                    "company": "Womelish.com",
+                    "position": "Freelance Frontend & WordPress Developer",
+                    "website": "http://company.com",
+                    "startDate": "May 2016",
+                    "endDate": "May 2016",
+                    "summary": "Freelance Frontend & WordPress Developer",
+                    "highlights": [
+                        "Started the company"
+                    ]
+                },
+                {
+                    "company": "Hoteles Hesperia Venezuela",
+                    "position": "Freelance Front End Developer",
+                    "website": "http://company.com",
+                    "startDate": "Oct 2015",
+                    "endDate": "Dic 2015",
+                    "summary": "Responsable del diseño visual e interactivo de las aplicaciones web corporativas de la empresa",
                     "highlights": [
                         "Started the company"
                     ]
@@ -114,6 +149,6 @@
                 }
             ]
         }
-        console.log(vm.dataHome);
+        //console.log(vm.dataHome);
     }
 })();

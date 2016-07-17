@@ -19,10 +19,10 @@
             .state('home', {
                 url: '/',
                 views: {
-                    menu: {
+                    experience: {
                         controller: 'homeCtrl',
                         controllerAs: 'ctrl',
-                        templateUrl: './templates/home/menu_tpl.html'
+                        templateUrl: './templates/experience/experience_tpl.html'
                     },
                     home: {
                         controller: 'homeCtrl',

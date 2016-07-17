@@ -1,14 +1,49 @@
-<section class="basic-data">
-    <img ng-src="{{ ctrl.dataHome.basics.picture }}" alt="Description" />
-    <h1>{{ ctrl.dataHome.basics.name }}</h1>
-    <p>{{ ctrl.dataHome.basics.label }}</p>
-    <p>{{ ctrl.dataHome.basics.email }}</p>
-    <p>{{ ctrl.dataHome.basics.website }}</p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <article>
-    </article>
-    <aside>
-    </aside>
-</section>
+<div class="container">
+    <!--div class="picture-resume-wrapper">
+        <div class="picture-resume">
+            <span><img src="{{ ctrl.dataHome.basics.picture }}" alt="" /></span>
+        </div>
+        <div class="clearfix"></div>
+    </div-->
+    <div class="name-wrapper">
+        <h1>{{ ctrl.dataHome.basics.name }}</h1>
+        <!-- YOUR NAME AND LAST NAME  -->
+    </div>
+    <div class="clearfix"></div>
+    <div class="contact-info clearfix">
+        <ul class="list-titles">
+            <li>Call</li>
+            <li>Mail</li>
+            <li>Web</li>
+            <li>Home</li>
+        </ul>
+        <ul class="list-content ">
+            <li>{{ ctrl.dataHome.basics.phone }}</li>
+            <!-- YOUR PHONE NUMBER  -->
+            <li>{{ ctrl.dataHome.basics.email }}</li>
+            <!-- YOUR EMAIL -->
+            <li><a href="#">{{ ctrl.dataHome.basics.website }}</a></li>
+            <!-- YOUR WEBSITE  -->
+            <li>Los Angeles, CA</li>
+            <!-- YOUR STATE AND COUNTRY  -->
+        </ul>
+    </div>
+    <div class="contact-presentation">
+        <!-- YOUR PRESENTATION RESUME  -->
+        <p>{{ ctrl.dataHome.basics.summary }}
+        </p>
+    </div>
+    <div class="clearfix"></div>
+    <!-- div class="contact-social clearfix">
+        <ul class="list-titles">
+            <li data-ng-repeat="profile in ctrl.dataHome.basics.profiles">
+                {{ profile.network }}
+            </li>
+        </ul>
+        <ul class="list-content">
+            <li data-ng-repeat="profile in ctrl.dataHome.basics.profiles">
+                <a href="{{ profile.url }}" class="pure-menu-link">{{ profile.username }}</a>
+            </li>
+        </ul>
+    </div -->
+</div>
